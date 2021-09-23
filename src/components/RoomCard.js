@@ -1,6 +1,5 @@
 import React,{useState} from 'react'
 import {Link} from 'react-router-dom'
-import { $CombinedState } from 'redux'
 import Button from './Button'
 
 const RoomCard=({room,className})=> {
