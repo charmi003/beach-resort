@@ -61,22 +61,22 @@ const BookingCard = ({booking}) => {
                         <span className='text-gray-600'>{booking.inDate}</span>
                     </H3>
 
-                    <H3 className='my-1.5>
+                    <H3 className='my-1.5'>
                         <span className='text-gray-800'>To:-</span>
                         <span className='text-gray-600'>{booking.outDate}</span>
                     </H3>
 
-                    <H3 className='my-1.5>
+                    <H3 className='my-1.5'>
                         <span className='text-gray-800 '>Room Details:-</span>
                         <span className='text-gray-600 capitalize'>{booking.roomNo.name}</span>
                     </H3>
 
-                    <H3 className='my-1.5>
+                    <H3 className='my-1.5'>
                         <span className='text-gray-800'>Room No:-</span>
                         <span className='text-gray-600'>{booking.roomNo.number}</span>
                     </H3>
 
-                    <H3 className='my-1.5>
+                    <H3 className='my-1.5'>
                         <span className='text-gray-800'>Amount:-</span>
                         <span className='text-gray-600'>{booking.amount}</span>
                     </H3>
