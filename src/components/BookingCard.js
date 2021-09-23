@@ -51,10 +51,10 @@ const BookingCard = ({booking}) => {
         pd='pb-14';
 
     return (
-        <div className={'border '+pd}>
+        <div className={'border relative my-6 px-2 '+pd}>
                 <H3 className='text-green-600'>Booking Id:-{booking._id}</H3>
                 
-                <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3'>
+                <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2'>
            
                     <H3>
                         <span className='text-gray-800'>From:-</span>
@@ -62,7 +62,7 @@ const BookingCard = ({booking}) => {
                     </H3>
 
                     <H3>
-                        <span className='text-gray-800 ml-4'>To:-</span>
+                        <span className='text-gray-800'>To:-</span>
                         <span className='text-gray-600'>{booking.outDate}</span>
                     </H3>
 
@@ -77,7 +77,7 @@ const BookingCard = ({booking}) => {
                     </H3>
 
                     <H3>
-                        <span className='text-gray-800 ml-4'>Amount:-</span>
+                        <span className='text-gray-800'>Amount:-</span>
                         <span className='text-gray-600'>{booking.amount}</span>
                     </H3>
 
