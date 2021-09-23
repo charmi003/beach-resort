@@ -15,7 +15,7 @@ const clientId=process.env.REACT_APP_AUTH0_CLIENT_ID;
 
 
 ReactDOM.render(
-  <Auth0Provider domain={domain} clientId={clientId} redirectUri="http://localhost:3000/login">
+  <Auth0Provider domain={domain} clientId={clientId} redirectUri="https://beach-resort-0.netlify.app/login">
 
     <Router>
       <AlertProvider template={AlertTemplate}>
