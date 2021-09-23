@@ -46,12 +46,8 @@ const BookingCard = ({booking}) => {
     if(state.error)
         return <h1 className='text-center m-8 mx-auto'>Something went wrong!</h1>
 
-    let pd='';
-    if(isCancelApplicable(booking.inDate))
-        pd='pb-14';
-
     return (
-        <div className={'border relative my-6 px-2 '+pd}>
+        <div className={'border my-6 px-2 pb-2'}>
                 <H3 className='text-green-600'>Booking Id:-{booking._id}</H3>
                 
                 <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2'>
@@ -84,7 +80,7 @@ const BookingCard = ({booking}) => {
                     { isCancelApplicable(booking.inDate) ?
                         <button
                         onClick={(e)=>cancelHandler(e)}
-                        className='cancel-button absolute bottom-4 right-4 py-1.5 px-5 bg-red-400 text-white font-bold rounded transform scale-100 hover:scale-105'>
+                        className='cancel-button py-1.5 px-5 bg-red-400 text-white font-bold rounded transform scale-100 hover:scale-105'>
                         Cancel</button>
                         : null
                     }      
