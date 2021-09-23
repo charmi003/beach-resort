@@ -53,7 +53,7 @@ const BookingCard = ({booking}) => {
     return (
         <div className={'flex flex-wrap lg:justify-between items-center border px-2 my-6 relative '+pd}>
 
-            <div>
+            <div className='flex-col flex-wrap'>
                 <H3 className='text-green-600'>Booking Id:-{booking._id}</H3>
                 <H3>
                     <span className='text-gray-800 '>Room Details:-</span>
@@ -61,7 +61,7 @@ const BookingCard = ({booking}) => {
                 </H3>
             </div>
             
-            <div>
+            <div className='flex-col flex-wrap'>
                 <H3>
                     <span className='text-gray-800'>From:-</span>
                     <span className='text-gray-600'>{booking.inDate}</span>
