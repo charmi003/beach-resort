@@ -49,7 +49,7 @@ const RoomsFilter=({})=> {
         <>
             <form className='flex flex-wrap justify-center mx-auto my-4'>
 
-                <div className='my-4 mx-7 md:mx-10'>
+                <div className='my-4 mx-3 md:mx-7 lg:mx-10'>
                     <label className='block text-center mb-1.5'>Room Type</label>
                     <select
                     className='border-2'
@@ -66,7 +66,7 @@ const RoomsFilter=({})=> {
                     </select>
                 </div>
 
-                <div className='my-4 mx-7 md:mx-10'>
+                <div className='my-4 mx-3 md:mx-7 lg:mx-10'>
                     <label className='block text-center mb-1.5'>Guests Per Room</label>
                     <input
                     type='number'
@@ -78,7 +78,7 @@ const RoomsFilter=({})=> {
                     </input>
                 </div>
 
-                <div className='my-4 mx-7 md:mx-10'>
+                <div className='my-4 mx-3 md:mx-7 lg:mx-10'>
                     <label className='block text-center mb-1.5'>Room price ${price}</label>
                     <input 
                     className='border-2 text-gray-600'
@@ -91,7 +91,7 @@ const RoomsFilter=({})=> {
                     onChange={(e)=>setPrice(e.target.value)} />
                 </div>
 
-                <div className='my-4 mx-7 md:mx-10'>
+                <div className='my-4 mx-3 md:mx-7 lg:mx-10'>
                     <label className='block text-center mb-1.5'>Room Size</label>
 
                     <input
@@ -115,7 +115,7 @@ const RoomsFilter=({})=> {
                     onChange={(e)=>{setMaxSize(e.target.value)}} />
                 </div>
 
-                <div className='my-4 mx-7 md:mx-10'>
+                <div className='my-4 mx-3 md:mx-7 lg:mx-10'>
                     <input
                     type='checkbox'
                     name='breakfast'
