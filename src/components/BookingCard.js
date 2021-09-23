@@ -51,42 +51,45 @@ const BookingCard = ({booking}) => {
         pd='pb-14';
 
     return (
-        <div className={'grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 '+pd}>
-
+        <div className={'border '+pd}>
                 <H3 className='text-green-600'>Booking Id:-{booking._id}</H3>
+                
+                <div className'grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3'>
            
-                <H3>
-                    <span className='text-gray-800'>From:-</span>
-                    <span className='text-gray-600'>{booking.inDate}</span>
-                </H3>
-                    
-                <H3>
-                    <span className='text-gray-800 ml-4'>To:-</span>
-                    <span className='text-gray-600'>{booking.outDate}</span>
-                </H3>
-                
-                <H3>
-                    <span className='text-gray-800 '>Room Details:-</span>
-                    <span className='text-gray-600 capitalize'>{booking.roomNo.name}</span>
-                </H3>
+                    <H3>
+                        <span className='text-gray-800'>From:-</span>
+                        <span className='text-gray-600'>{booking.inDate}</span>
+                    </H3>
 
-                <H3>
-                    <span className='text-gray-800'>Room No:-</span>
-                    <span className='text-gray-600'>{booking.roomNo.number}</span>
-                </H3>
-                
-                <H3>
-                    <span className='text-gray-800 ml-4'>Amount:-</span>
-                    <span className='text-gray-600'>{booking.amount}</span>
-                </H3>
+                    <H3>
+                        <span className='text-gray-800 ml-4'>To:-</span>
+                        <span className='text-gray-600'>{booking.outDate}</span>
+                    </H3>
 
-                { isCancelApplicable(booking.inDate) ?
-                    <button
-                    onClick={(e)=>cancelHandler(e)}
-                    className='cancel-button absolute bottom-4 right-4 py-1.5 px-5 bg-red-400 text-white font-bold rounded transform scale-100 hover:scale-105'>
-                    Cancel</button>
-                    : null
-                }       
+                    <H3>
+                        <span className='text-gray-800 '>Room Details:-</span>
+                        <span className='text-gray-600 capitalize'>{booking.roomNo.name}</span>
+                    </H3>
+
+                    <H3>
+                        <span className='text-gray-800'>Room No:-</span>
+                        <span className='text-gray-600'>{booking.roomNo.number}</span>
+                    </H3>
+
+                    <H3>
+                        <span className='text-gray-800 ml-4'>Amount:-</span>
+                        <span className='text-gray-600'>{booking.amount}</span>
+                    </H3>
+
+                    { isCancelApplicable(booking.inDate) ?
+                        <button
+                        onClick={(e)=>cancelHandler(e)}
+                        className='cancel-button absolute bottom-4 right-4 py-1.5 px-5 bg-red-400 text-white font-bold rounded transform scale-100 hover:scale-105'>
+                        Cancel</button>
+                        : null
+                    }      
+             </div>
+          
             
         </div>
     )
