@@ -78,10 +78,12 @@ const BookingCard = ({booking}) => {
                     </H3>
 
                     { isCancelApplicable(booking.inDate) ?
-                        <button
-                        onClick={(e)=>cancelHandler(e)}
-                        className='cancel-button my-1.5 w-24 py-1.5 px-5 bg-red-400 text-white font-bold rounded transform scale-100 hover:scale-105'>
-                        Cancel</button>
+                        <H3 className='my-1.5 text-right'>
+                            <button
+                            onClick={(e)=>cancelHandler(e)}
+                            className='cancel-button w-24 py-1.5 px-5 bg-red-400 text-white font-bold rounded transform scale-100 hover:scale-105'>
+                            Cancel</button>
+                        </H3>
                         : null
                     }      
              </div>
