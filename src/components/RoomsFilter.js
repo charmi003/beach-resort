@@ -62,6 +62,7 @@ const RoomsFilter=({})=> {
                         <option value='basic'>Basic</option>
                         <option value='standard'>Standard</option>
                         <option value='deluxe'>Deluxe</option>
+                        <option value='presidential'>Presidential</option>
                     </select>
                 </div>
 
