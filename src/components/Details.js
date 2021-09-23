@@ -10,7 +10,7 @@ function Details({singleRoom}) {
         </div> 
 
         <div className='w-full lg:w-2/5 p-2 m-2 lg:ml-6 info font-semibold'>
-            <H3 className='tracking-normal'>Info</H3>
+            <H3 className='tracking-tighter md:tracking-normal'>Info</H3>
             <p className='mb-4'>Price : ${singleRoom.price}</p>
             <p className='mb-4'>Size : {singleRoom.size} SQFT</p>
             <p className='mb-4'>Max Capacity : {singleRoom.capacity} People</p>
