@@ -91,7 +91,7 @@ const Book = () => {
 
         <div className='p-2 flex flex-wrap justify-center lg:justify-around items-center my-12 w-full lg:w-3/4 mx-auto'>
 
-            <div className='flex-col mx-8 mb-6 lg:mb-0 mt-2 ' style={{fontFamily:'Source Code Pro'}}>
+            <div className='flex-col mx-2 md:mx-8 mb-6 lg:mb-0 mt-2 ' style={{fontFamily:'Source Code Pro'}}>
                 <RoomCard room={state.singleRoom}></RoomCard> 
 
                 <div className='mt-12'>
