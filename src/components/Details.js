@@ -10,12 +10,12 @@ function Details({singleRoom}) {
         </div> 
 
         <div className='w-full lg:w-2/5 p-2 m-2 lg:ml-6 info font-semibold'>
-            <H3 className='tracking-tighter md:tracking-normal'>Info</H3>
-            <p className='mb-4'>Price : ${singleRoom.price}</p>
-            <p className='mb-4'>Size : {singleRoom.size} SQFT</p>
-            <p className='mb-4'>Max Capacity : {singleRoom.capacity} People</p>
-            <p className='mb-4'>Pets {singleRoom.pets? 'Allowed' : 'Not Allowed'}</p> 
-            <p className='mb-4'>Breakfast {singleRoom.breakfast ? 'Included' : 'Not Included'}</p>
+            <H3>Info</H3>
+            <p className='mb-4 tracking-tighter md:tracking-normal'>Price : ${singleRoom.price}</p>
+            <p className='mb-4 tracking-tighter md:tracking-normal'>Size : {singleRoom.size} SQFT</p>
+            <p className='mb-4 tracking-tighter md:tracking-normal'>Max Capacity : {singleRoom.capacity} People</p>
+            <p className='mb-4 tracking-tighter md:tracking-normal'>Pets {singleRoom.pets? 'Allowed' : 'Not Allowed'}</p> 
+            <p className='mb-4 tracking-tighter md:tracking-normal'>Breakfast {singleRoom.breakfast ? 'Included' : 'Not Included'}</p>
         </div>
     </div>
 
