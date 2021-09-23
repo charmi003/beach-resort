@@ -80,7 +80,7 @@ const BookingCard = ({booking}) => {
                     { isCancelApplicable(booking.inDate) ?
                         <button
                         onClick={(e)=>cancelHandler(e)}
-                        className='cancel-button py-1.5 px-5 bg-red-400 text-white font-bold rounded transform scale-100 hover:scale-105'>
+                        className='cancel-button my-1.5 w-24 py-1.5 px-5 bg-red-400 text-white font-bold rounded transform scale-100 hover:scale-105'>
                         Cancel</button>
                         : null
                     }      
