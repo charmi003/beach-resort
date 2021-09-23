@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: "Source Code Pro", monospace;
+}
+
+.cancel-button {
+  font-family: "Quicksand", sans-serif;
+}
+
+input, textarea {
+  outline: none;
+}
+
+input:not([type=range]):focus, textarea:focus {
+  box-shadow: 0 0 5px #51cbee;
+  border: 1px solid #51cbee;
+}
+
+nav {
+  height: auto;
+  background-color: #f7f7f7;
+}
+nav p {
+  font-weight: 600;
+  font-size: 18px;
+}
+nav p span:last-child {
+  display: inline-block;
+  color: #af9a7d;
+  text-shadow: 6px 4px 4px #d8c5a8;
+}
+nav ul span {
+  color: #222;
+  font-family: "Quicksand", sans-serif;
+  transition: all 0.3s linear;
+}
+nav ul span:hover {
+  color: #af9a7d;
+}
+
+.line-lg, .line-sm {
+  background-color: #af9a7d;
+  border: 2px solid #af9a7d;
+  width: 40%;
+}
+
+.line-sm {
+  width: 5vw;
+}
+
+.btn-primary {
+  letter-spacing: 3px;
+  font-family: "Quicksand", sans-serif;
+  border: 2px solid #af9a7d;
+  background-color: #af9a7d;
+  color: #222;
+  font-weight: bolder;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.btn-primary:hover {
+  background-color: transparent;
+  color: #af9a7d;
+}
+
+.banner {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  color: #fff;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+#services {
+  height: auto;
+  background-color: #cfcfcf;
+}
+#services .service-icon {
+  color: #af9a7d;
+}
+#services p {
+  font-family: "Quicksand", sans-serif;
+}
+
+.room-card {
+  font-family: "Quicksand", sans-serif;
+  box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+}
+.room-card:hover {
+  box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.room-card .img-container {
+  position: relative;
+}
+.room-card .room-price {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-family: "Quicksand", sans-serif;
+  color: white;
+}
+.room-card .link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(0);
+}
+.room-card .img-container:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.room-card .img-container:hover img {
+  opacity: 0.3;
+}
+.room-card .img-container:hover .room-price {
+  transform: scale(0);
+}
+.room-card .img-container:hover .link {
+  transform: translate(-50%, -50%) scale(1);
+}
+.room-card .room-name {
+  background-color: #cfcfcf;
+  font-weight: 700;
+}
+
+#room-info .carousel {
+  position: relative;
+}
+#room-info .carousel .next {
+  position: absolute;
+  top: 45%;
+  right: 4%;
+}
+#room-info .carousel .prev {
+  position: absolute;
+  top: 45%;
+  left: 4%;
+}
+#room-info .details, #room-info .extras {
+  font-family: "Quicksand", sans-serif;
+}
+#room-info .info {
+  letter-spacing: 3px;
+}
+
+form label {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  color: #222;
+}
+form input[name=capacity] {
+  width: 90px;
+}
+
+[type=date] {
+  background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50% no-repeat;
+}
+
+[type=date]::-webkit-inner-spin-button {
+  display: none;
+}
+
+[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+#availability-form label {
+  display: block;
+}
+
+input[type=date] {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
+  width: 190px;
+}
