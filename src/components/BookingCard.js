@@ -48,7 +48,7 @@ const BookingCard = ({booking}) => {
 
     return (
         <div className={'border my-6 px-2 pb-2'}>
-                <H3 className='text-green-600'>Booking Id:-{booking._id}</H3>
+                <H3 className='flex flex-wrap text-green-600'><span>Booking Id:-</span><span>{booking._id}</span></H3>
                 
                 <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2'>
            
