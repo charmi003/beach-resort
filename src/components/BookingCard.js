@@ -51,7 +51,7 @@ const BookingCard = ({booking}) => {
         pd='pb-14';
 
     return (
-        <div className={'grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3' '+pd}>
+        <div className={'grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 '+pd}>
 
                 <H3 className='text-green-600'>Booking Id:-{booking._id}</H3>
            
