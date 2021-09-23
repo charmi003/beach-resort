@@ -3,7 +3,7 @@ import H3 from './H3'
 
 function Details({singleRoom}) {
     return (
-        <div className='flex flex-wrap items-start justify-between mt-6 mb-8 w-5/6 md:w-2/3 mx-auto'>
+        <div className='flex flex-wrap items-start justify-between mt-6 mb-5 md:mb-7 w-5/6 md:w-2/3 mx-auto'>
         <div className='w-full lg:w-1/2 p-2 m-2 details'>
             <H3>Details</H3>
             <p className='font-medium text-justify'>{singleRoom.description}</p>
